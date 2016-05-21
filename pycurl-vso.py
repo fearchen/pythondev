@@ -7,6 +7,10 @@ import string
 import sys
 import time
 
+URLS = ['http://www.vsochina.com', 'http://www.baidu.com',  'http://www.sina.com']
+for URL in URLS:        
+   print '当前URL :', URL
+
 URL = "http://www.vsochina.com"
 c = pycurl.Curl()
 c.setopt(pycurl.URL, URL)  # 定义请求的URL常量
